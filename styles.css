@@ -46,3 +46,13 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+img {
+    width: 40%; /* 画像の幅を元の40%にする */
+    display: inline-block; /* 横に並べる */
+    margin: 5px; /* 画像間の余白 */
+    vertical-align: top; /* 画像のトップを揃える */
+}
+
+.image-container {
+    text-align: center; /* 画像を中央揃えにする */
+}
