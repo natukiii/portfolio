@@ -1,27 +1,19 @@
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-
-/* ベーススタイル */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #333;
     color: white;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 header h1 {
-    margin: 0; /* h1のマージンをリセット */
-    font-size: 2.5em; /* フォントサイズを大きく */
-    color: white; /* 色を白に設定 */
+    color: white; /* 文字の色を白に変更 */
 }
 
 nav ul {
@@ -31,47 +23,42 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline-block;
+    position: relative;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: 700;
-    transition: color 0.3s ease;
+    padding: 10px;
+    display: block;
 }
 
-nav ul li a:hover {
-    color: #f1f1f1;
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 0;
+    list-style-type: none;
+    z-index: 1;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    width: 150px;
 }
 
 main {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 20px;
 }
 
 h1, h2, h3 {
-    color: #4CAF50;
-    margin-bottom: 20px;
-}
-
-h2 {
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 10px;
-}
-
-.project {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.project h3 {
-    margin-top: 0;
+    color: #333;
 }
 
 .image-container {
@@ -84,29 +71,11 @@ img {
     display: inline-block;
     margin: 5px;
     vertical-align: top;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-img:hover {
-    transform: scale(1.05);
-}
-
-iframe {
-    border: none;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    background-color: #4CAF50;
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
 }
